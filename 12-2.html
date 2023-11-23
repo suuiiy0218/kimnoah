@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frame Animation</title>
+    <script>
+        window.onload = function () {
+            // 변수를 선언합니다.
+            var count = 0;
+            var image = document.getElementById('image');
+            var frames = [
+                '1.jpg', '2.jpg', '3.jpg', '4.jpg',
+                '5.jpg', '6.jpg', '7.jpg'
+            ];
+            // 타이머 반복을 시작합니다.
+            setInterval(function () {
+                image.src = frames[count % frames.length];
+                count = count + 1;
+            }, 1000 / 20);
+        };
+    </script>
+</head>
+<body>
+    <img id="image">
+</body>
+</html>
