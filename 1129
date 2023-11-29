@@ -1,0 +1,36 @@
+let number = new Number(273);
+let string = new String('안녕하세요');
+let boolean = new Boolean(true);
+
+
+console.log(typeof number);
+console.log(typeof string);
+console.log(typeof boolean);
+
+
+let number = 273.5210332;
+
+
+console.log(number.toFixed(1));
+console.log(number.toFixed(4));
+
+
+class Test {}
+Test.property = 273;
+Test.method = function () { };
+
+
+console.log(Test.property)
+console.log(Test.method)
+
+let string = 'abcdefg';
+
+string = string.toUpperCase();
+console.log(string);
+
+let date = new Date();
+console.log(data);
+data.setFullYear(data.getFullYear() + 1);
+data.setData(data.getData() +3);
+
+console.log(data);
